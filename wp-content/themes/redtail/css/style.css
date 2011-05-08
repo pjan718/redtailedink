@@ -1,0 +1,239 @@
+/* font-face stuff first, just cuz: */
+@font-face { /* fill in font name and filenames */
+    font-family:'';
+    src: url('.eot?') format('☺'), /* keep the question mark */
+		url('.woff') format('woff'),
+		url('.ttf') format('truetype'),
+		url('.svg#xxx') format('svg'); /* replace xxx */
+	/* keep these lines */
+    font-variant: normal;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* TOUCAN CSS RESET | v0.1.9 */
+/* Adapted by Aaron James Young */
+
+/* General
+---------------------------------------- */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, 
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+}
+
+p, blockquote, q, pre, address, hr, code, samp,
+dl, ol, ul, form, table, fieldset, menu {
+	margin-bottom: 1.5em;
+}
+
+/* html5 elements */
+/* required for FF <= 3.6 */
+header, footer, section, nav, aside, article, figure, hgroup {
+  display: block;
+}
+
+/* Structure
+---------------------------------------- */
+html { font-size: 100%; background-color:black;}
+body { line-height: 1.5em;
+		width: 1040px; margin: auto; /* center */ padding: 0;
+		 
+		 background: #eee;
+
+
+} /* define a pixel font size later in this stylesheet */
+
+/* Text
+---------------------------------------- */
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+h1 { font-size: 3em; line-height: 1.1em; margin-bottom: .238em; }
+h2 { font-size: 2em; line-height: 1.15em; margin-bottom: .357em; }
+h3 { font-size: 1.5em; line-height: 1.2em; margin-bottom: .476em; } 
+em, i { font-style: italic; }
+strong, b { font-weight: bold; }
+blockquote, q, cite { font-style: italic; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+code, kbd, pre, samp, { } /* set a font */
+pre { /* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
+  white-space: pre; white-space: pre-wrap; word-wrap: break-word;
+  padding: 15px;
+}
+abbr, dfn { border-bottom: 1px dotted; cursor: help; font-style: normal; font-variant: normal; }
+var { font-style: normal; }
+/* Set sub, sup without affecting line-height: gist.github.com/413930 */
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+/* Hypertext
+---------------------------------------- */
+a:focus { outline: 1px dotted; }
+
+/* Image
+---------------------------------------- */
+img { border: 0; }
+
+/* List
+---------------------------------------- */
+
+ul { list-style: disc outside none; }
+ol { list-style: decimal outside none; }
+li { margin-left: 24px; } /* orig 2em */
+li ul, li ol { margin-bottom: 0; }
+dt { font-weight: bold; }
+dd { margin-bottom: 1em; }
+/* Remove margins for navigation lists */
+nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
+
+/* Presentation
+---------------------------------------- */
+hr { border: 0; border-bottom: 1px solid; }
+small, sub, sup { font-size: .85em; }
+sub, sup { line-height: 1; }
+sub { vertical-align: bottom; }
+sup { vertical-align: top; }
+del, s, { text-decoration: line-through; }
+ins { border-bottom: 1px dotted; text-decoration: none; }
+bdo { border-bottom: 1px dotted; }
+
+/* Form
+---------------------------------------- */
+fieldset { padding: 1em; }
+legend { font-weight: bold; padding: 0 .25em; }
+input, textarea, select, button { font-family: inherit; font-size: 100%; }
+input[type=button], input[type=file], input[type=image], input[type=reset], input[type=submit], 
+button[type=button], button[type=reset], button[type=submit] { cursor: pointer;	line-height: 1; }
+textarea { line-height: 1.25; text-align: left; }
+/* Align checkboxes, radios, text inputs with their label tjkdesign.com/ez-css/css/base.css  */
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+/* Hand cursor on clickable input elements */
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
+
+/* Table
+---------------------------------------- */
+table { border: 0; border-collapse: collapse; border-spacing: 0; line-height: 1.3; }
+caption, th, td { text-align: left; vertical-align: top; }
+th, td { border: 1px solid; padding: .5em 1em; }
+caption { padding-bottom: 1em; }
+th { font-weight: bold; }
+
+/* box-sizing to make things easier. Use a fallback for IE 6 & 7 */
+body, div, object, iframe, header, footer, section, nav, aside, article, figure,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, li,
+form, fieldset, textarea, input { 
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; /* these settings work in FF, Webkit, and IE8+ */
+}
+
+/***********************CUSTOMIZATION AND LAYOUT STUFF***************************/
+
+/* First, set some generic styles */
+body { font-family: 'Liberation Sans', sans-serif; /* no helvetica or arial */
+    /* set a pixel font size here, no need to set any other font sizes */ }
+
+/* self-clearing floats */
+.mod:before, .mod:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.mod:after { clear: both; }
+/* Fix mod: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
+.mod { zoom: 1; }
+
+/* optional vanity styles */
+::selection {background: #c80000;}
+::-moz-selection {background: #c80000;}
+
+img::selection {background: transparent;}
+img::-moz-selection {background: transparent;}
+
+.gl { float: left; } /* adjust direction of float for golden columns here */
+.gs { float: right; }
+
+/* default Wordpress classes added by the editor */
+/* these are here because they may need to be treated differently in different layouts */
+.alignright { float: right; display: inline; margin: 0 0 15px 15px; }
+.alignleft { float: left; display: inline; margin: 0 15px 15px 0; }
+.center { display: block; margin: 0 auto; }
+
+/* text general styles */
+h1 { }
+h2 { }
+h3 { }
+p { }
+ul { }
+ol { }
+hr { }
+a { }
+a:link { -webkit-tap-highlight-color: #FF5E99; }
+
+/* "Grid" stuff - inspired by Less Framework and tweaked into oblivion
+ * There are three media query layouts: 768px, 480px, 320px
+ * Use these as desired, delete or comment the others
+ * ------------------------------------- */
+
+/* 768px width */
+@media only screen and (max-width: 959px) and (min-width: 768px) {
+	.body { padding: 0 24px; width: 768px; margin: 0 auto; }
+	.gl { width: 430px; }
+	.gs { width: 266px; }
+	.full { width: 720x; }
+	.half { float: left; width: 348px; margin-right: 24px; }
+	.half:nth-of-type(2n) { margin-right: 0; }
+	.third, .sixth { float: left; width: 224px; margin-right: 24px; }
+	.third:nth-of-type(3n), .sixth:nth-of-type(3n) { margin-right: 0; }
+	.quarter { float: left; width: 162px; margin-right: 24px; }
+	.quarter:nth-of-type(4n) { margin-right: 0; }
+}
+
+/* 480px width */
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+    .body { padding: 0 24px; width: 480px; margin: 0 auto; }
+    .gl { width: 255px; } .gs { width: 157px; }
+    .full { width: 432px; }
+    .half, .third, .quarter, .sixth { float: left; width: 206px; margin-right: 24px; }
+    .third:nth-of-type(3n) { margin-right: 24px; }
+    .half:nth-of-type(2n), .third:nth-of-type(2n), .quarter:nth-of-type(2n), .sixth:nth-of-type(2n) { margin-right: 0; }
+}
+
+/* 320px width */
+@media only screen and (max-width: 479px) {
+    .body { padding: 0 24px; width: 320px; margin: 0 auto; }
+    .gl, .gs, .full, .half, .third, .quarter { width: 272px; float: left; margin: 0; }
+    .sixth { float: left; width: 124px; margin-right: 24px; }
+    .sixth:nth-of-type(2n) { margin-right: 0; }
+}
+
+header.body{
+	height:120px;
+	width:1040px;
+	background:url('../images/header_bg.jpg') no-repeat;
+
+}
+
+nav.body {
+	margin: 60px 0 0 700px; padding: 0 0 0 0;
+	list-style:none;
+	list-style-image: none;
+	float:left;
+}
+
+nav.body ul li {float:left; margin:0 0 0 0; padding:0 20px 0 0;}
+
+nav a:hover {color:white;}
+
+header.rotator {
+	height:460px;
+	width:1040px;
+	background:url('../images/rotator_1.jpg') no-repeat;
+}

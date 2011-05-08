@@ -1,0 +1,24 @@
+/* IE7+ - scale images more attractively */
+img {
+	-ms-interpolation-mode: bicubic;
+}
+
+/* IE 6-8 don't support :nth-last-child by default. This can be worked-around by using Selectivizr,
+ * but only with certain Javascript libraries (not jQuery, for example). If you're using Selectivizr
+ * plus a JS library that results in support for :nth-last-child in IE, then this stuff can be
+ * removed.
+ *
+ * As defined in style.css, these boxes have 24-px right margin, except for the last element in a
+ * row. Since that won't work in IE, I'm approximating it by having a smaller right and left margin
+ * on each element. Not a perfect solution. */
+.half { margin: 0 6px; display: inline; } /* display: inline to fix double-margin float bug in IE6 */
+.third { margin: 0 8px; display: inline; }
+.quarter { margin: 0 9px; display: inline; }
+.sixth { margin: 0 10px; display: inline; }
+
+
+/* fix measurements for IE 6 & 7 because they don't support box-sizing */
+/* they get the ie7 class on the html tag, so use as such:
+ * comment the below line if you're using the 960 default layout, it doesn't have padding so box-sizing won't
+ * matter */
+.ie7 .body { width: 648px; } /* needed to fix the width of the .body stuff */
