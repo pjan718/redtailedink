@@ -1,0 +1,17 @@
+/*   
+Theme Name: Skeleton Wordpress Theme
+Theme URI: http://ajy.co
+Description: A starter/blank theme using HTML5 semantic elements and containing a bunch of stuff that I use for new projects.
+Author: Aaron James Young
+Author URI: http://ajy.co
+Version: 0.1
+*/
+
+/*
+    Note: The CSS for this theme is located at {themedirectory}/css/style.css
+    Other CSS files are there too: reset.css (which is @import'ed into style.css)
+    Also there is an ie.css stylesheet. The header.php currently has a conditional
+    statement for "lt IE 9" which should be adequate in most cases.
+*/
+
+
