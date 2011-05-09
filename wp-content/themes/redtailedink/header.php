@@ -32,14 +32,4 @@
 <body <?php body_class(); ?>>
 
 
-	<header class="body">
-    <?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar('header-widget-area') ) : else : ?>
-        <?php endif; ?>
 	
-	<nav class="body">
-		<?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar('nav-widget-area') ) : else : ?>
-        <?php endif; ?>
-	</nav>
-	
-	</header>
-

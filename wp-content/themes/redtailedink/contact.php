@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Contact
+*/
+?>
+
 <?php get_header(); ?>
 	
 	<header class="body">
@@ -23,9 +29,6 @@
 
 	<section class="body index">
 		
-		<div id="rotator">
-			
-		</div>
 		
 		
 			

@@ -1,11 +1,15 @@
 /* font-face stuff first, just cuz: */
-@font-face { /* fill in font name and filenames */
-    font-family:'';
-    src: url('.eot?') format('☺'), /* keep the question mark */
-		url('.woff') format('woff'),
-		url('.ttf') format('truetype'),
-		url('.svg#xxx') format('svg'); /* replace xxx */
-	/* keep these lines */
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('BebasNeue-webfont.eot');
+    src: url('BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('BebasNeue-webfont.woff') format('woff'),
+         url('BebasNeue-webfont.ttf') format('truetype'),
+         url('BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
     font-variant: normal;
     font-weight: normal;
     font-style: normal;
@@ -46,7 +50,7 @@ html { font-size: 100%; background-color:black;}
 body { line-height: 1.5em;
 		width: 1040px; margin: auto; /* center */ padding: 0;
 		 
-		 background: #eee;
+	
 
 
 } /* define a pixel font size later in this stylesheet */
@@ -167,7 +171,7 @@ img::-moz-selection {background: transparent;}
 .center { display: block; margin: 0 auto; }
 
 /* text general styles */
-h1 { }
+h1.fontface { font: 1em 'BebasNeueRegular', Arial, sans-serif;letter-spacing: 0; }
 h2 { }
 h3 { }
 p { }
@@ -217,22 +221,33 @@ a:link { -webkit-tap-highlight-color: #FF5E99; }
 header.body{
 	height:120px;
 	width:1040px;
-	background:url('../images/header_bg.jpg') no-repeat;
+	background-color:black;
 
 }
 
-nav.body {
-	margin: 60px 0 0 700px; padding: 0 0 0 0;
-	list-style:none;
-	list-style-image: none;
+header {
+	margin:0 0 0 0; padding:30px 0 0 0;
+}
+
+div.logo {
+	background:url('../images/header_logo.gif') no-repeat;
+	height:69px;
+	width:410px;
+	margin:0 0 0 25px; padding:0 0 0 0;
 	float:left;
+	
 }
 
-nav.body ul li {float:left; margin:0 0 0 0; padding:0 20px 0 0;}
-
+nav {
+	float:right;
+	margin:0 0 20px 0; padding:50px 0 0 0;
+}
+nav ul li {float:left; margin:0 0 0 0; padding:0 40px 0 0; }
+nav a {color:#808080; text-decoration:none;}
 nav a:hover {color:white;}
+nav.fontface {font: 1.2em 'BebasNeueRegular', Arial, sans-serif;letter-spacing: 0;}
 
-header.rotator {
+#rotator {
 	height:460px;
 	width:1040px;
 	background:url('../images/rotator_1.jpg') no-repeat;

@@ -23,9 +23,6 @@
 
 	<section class="body index">
 		
-		<div id="rotator">
-			
-		</div>
 		
 		
 			
