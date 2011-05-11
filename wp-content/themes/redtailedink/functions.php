@@ -121,3 +121,5 @@
     ));
 
 ?>
+
+<?php if (is_page_template(" ")){ ?>class="selected"<?php } ?>

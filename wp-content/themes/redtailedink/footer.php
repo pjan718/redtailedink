@@ -1,10 +1,14 @@
 	<footer class="body">
 		<?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar('footer-widget-area') ) : else : ?>
         <?php endif; ?>
-		<!-- <p>
-			<span>Copyright</span> &copy; <?php echo date("Y"); echo " "; bloginfo('name'); ?> |
-			<a href="http://ajy.co/"><span>Website Designed by</span> Aaron James Young</a>
-		</p> -->
+		
+		<div class="kazLogo">
+		
+		</div>
+		
+		<p class="fontface">
+			<a href="http://ajy.co/">Copyright &copy; <?php echo date("Y"); echo " "; bloginfo('name'); ?> </a>
+		</p>
 	</footer>
 	<!-- analytics -->
 	<?php wp_footer(); ?>

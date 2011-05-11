@@ -218,6 +218,8 @@ a:link { -webkit-tap-highlight-color: #FF5E99; }
     .sixth:nth-of-type(2n) { margin-right: 0; }
 }
 
+/*////////////MAIN STYLES///////////////////*/
+
 header.body{
 	height:120px;
 	width:1040px;
@@ -245,6 +247,7 @@ nav {
 nav ul li {float:left; margin:0 0 0 0; padding:0 40px 0 0; }
 nav a {color:#808080; text-decoration:none;}
 nav a:hover {color:white;}
+.current-menu-item a{ color:white; } /* the current Page */
 nav.fontface {font: 1.2em 'BebasNeueRegular', Arial, sans-serif;letter-spacing: 0;}
 
 #rotator {
@@ -252,3 +255,34 @@ nav.fontface {font: 1.2em 'BebasNeueRegular', Arial, sans-serif;letter-spacing: 
 	width:1040px;
 	background:url('../images/rotator_1.jpg') no-repeat;
 }
+
+.kazLogo {
+	margin:0 0 0 30px; padding:0 0 0 0;
+	height:57px;
+	width:81px;
+	background:url('../images/kazlogo.gif') no-repeat;
+	float:left;
+	
+}
+
+p.fontface a{
+	margin:0 0 0 0; padding: 35px 40px 0 0;
+	font: 1.2em 'BebasNeueRegular', Arial, sans-serif;
+	letter-spacing: 0;
+	color:#808080;
+	text-decoration:none;
+	float:right;
+	
+}
+
+/*////////////GALLERY STYLES///////////////////*/
+
+#gallery {
+	height:460px;
+	width:1040px;
+	background:url('../images/gallery_bg.jpg') no-repeat;
+}
+
+
+
+
