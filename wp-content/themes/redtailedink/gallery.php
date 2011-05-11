@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Snarfer
+Template Name: Gallery
 */
 ?>
 <?php get_header(); ?>
@@ -35,32 +35,29 @@ Template Name: Snarfer
 		<?php get_sidebar(); ?>
 		
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+	
+			
+			
+			
+			
+			
+		<div id="gallery">
+			<section>
+				<?php the_content(); ?>
+				
+					
+				
+			</section>
+		</div>
+			
+				
+			</section>
 			
 			
 			
 			
 			
 		
-			<section>
-				<?php the_content(); ?>
-				
-					<section class="post">
-				<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-				<p> <!-- edit this meta stuff? -->
-					<span>Posted on:</span> <?php the_time('F jS, Y'); ?>
-					<span>by</span> <?php the_author(); ?> |
-					<?php comments_popup_link('No Comments', '1 Comment', '% Comments', 'comments-link', ''); ?>
-				</p>
-			</section>
-				
-			</section>
-			
-			
-			
-			
-			
-		</article>
 		<?php endwhile; ?>
 		<nav class="pagination">
 			<ul>
