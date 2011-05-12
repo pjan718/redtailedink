@@ -10,7 +10,7 @@
 }
 
 .photospace .thumnail_col{ 
-	float:left;
+	float:right;
 	opacity:1;
 	width:181px;
 }
@@ -18,7 +18,7 @@
 .photospace .gal_content {
 	/* The display of content is enabled using jQuery so that the slideshow content won't display unless javascript is enabled. */
 	display: none;
-	float: right;
+	float: left;
 	width: 400px;
 }
 .photospace .gal_content a, 
