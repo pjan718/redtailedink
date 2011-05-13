@@ -51,7 +51,7 @@ Template Name: Gallery
 		</div>
 			
 				
-			</section>
+
 			
 			
 			
@@ -59,18 +59,7 @@ Template Name: Gallery
 			
 		
 		<?php endwhile; ?>
-		<nav class="pagination">
-			<ul>
-				<li><?php next_posts_link('&laquo; Older Entries') ?></li>
-				<li><?php previous_posts_link('Newer Entries &raquo;') ?></li>
-			</ul>
-		</nav>
 		<?php else : ?>
-		<article>
-			<header>
-				<h2>Not Found</h2>
-			</header>
-		</article>
 		<?php endif; ?>
 	
 	</section>

@@ -253,6 +253,7 @@ nav.fontface {font: 1.2em 'BebasNeueRegular', Arial, sans-serif;letter-spacing: 
 #rotator {
 	height:460px;
 	width:1040px;
+	margin:4px 0 0 0; padding: 0 0 0 0;
 	background:url('../images/rotator_1.jpg') no-repeat;
 }
 
@@ -280,8 +281,38 @@ p.fontface a{
 #gallery {
 	height:460px;
 	width:1040px;
+	margin: 0 0 0 0; padding: 0 0 0 20px;
 	background:url('../images/gallery_bg.jpg') no-repeat;
 }
+
+.photospace ul.thumbs li {
+    margin-left:10px;
+    margin-right:0 !important;
+}
+.photospace .thumnail_col a.pageLink {
+    margin-left:10px;
+    margin-right:0
+}
+
+
+/*////////////CONTACT STYLES///////////////////*/
+
+#contact {
+	height:460px;
+	width:1040px;
+	margin:4px 0 0 0; padding: 0 0 0 20px;
+	background:url('../images/contact_bg.jpg') no-repeat;
+}
+
+#contact h1 {
+	margin:0 0 0 0; padding: 0 0 0 0;
+	font: 2em 'BebasNeueRegular', Arial, sans-serif;
+	color:white;
+}
+
+
+
+
 
 
 

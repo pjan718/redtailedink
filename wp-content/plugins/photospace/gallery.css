@@ -1,7 +1,8 @@
 .photospace{
-	margin-top:30px;
-	margin-bottom:40px;
-	position:relative;
+	width:1000px;
+	margin-bottom:0;
+	margin:4px 0 0 0;
+	
 	overflow:visible;
 }
 
@@ -10,6 +11,7 @@
 }
 
 .photospace .thumnail_col{ 
+	margin:0 0 0 0; padding:40px 0 0 10px;
 	float:right;
 	opacity:1;
 	width:181px;
@@ -17,6 +19,7 @@
 
 .photospace .gal_content {
 	/* The display of content is enabled using jQuery so that the slideshow content won't display unless javascript is enabled. */
+	margin:0 0 0 0; padding:30px 0 0 0;
 	display: none;
 	float: left;
 	width: 400px;
@@ -204,9 +207,9 @@
 }
 
 .photospace .thumnail_col a.pageLink {
-	height: 50px;
-	line-height: 50px;
-	background-color:#FFF;
+	height: 42px;
+	
+	width:63px;
 	
 	display: block;
 	position: relative;
@@ -214,7 +217,7 @@
 	background-position:center center;
 	background-repeat:no-repeat;
 	margin-right:10px;
-	border:solid 1px #CCC;
+
 }
 .photospace .thumnail_col a.pageLink:focus {
 	outline: none;
@@ -222,9 +225,14 @@
 
 .photospace .thumnail_col a.prev {
 	background-image: url('arrow-left.png');
+	float:left;
+	margin:30px 0 0 0; padding:0 0 0 0;
+	
 }
 .photospace .thumnail_col a.next {
 	background-image: url('arrow-right.png');
+	float:right;
+	margin:30px 30px 0 0; padding:0 0 0 0;
 }
 
 .photospace .hide_me{
